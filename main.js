@@ -11,7 +11,21 @@ let snakeArr =[
     {x:13, y:15}
 ]
 food = {x:6, y:7};
+//select levels
+const easy = document.getElementById('easy');
+const medium = document.getElementById('medium');
+const hard = document.getElementById('hard');
 
+easy.addEventListener('click', (e) =>{
+    speed=3;
+});
+
+medium.addEventListener('click', (e) =>{
+    speed=7;
+});
+hard.addEventListener('click', (e) =>{
+    speed=15;
+});
 
 //all functions
 function main(currentTime){
