@@ -56,6 +56,15 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 
+#level  #easy{
+  background-color: #e74c3c;
+}
+#level  #medium{
+  background-color: #f39c12;
+}
+#level  #hard{
+  background-color: #2980b9;
+}
 
 #button {
   text-align: center;
