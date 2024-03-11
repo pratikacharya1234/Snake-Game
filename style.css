@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: greenyellow;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#board {
+  background: linear-gradient(lightgreen, rgba(51, 255, 0, 0.76));
+  width: 90vmin;
+  height: 92vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+  margin: 20px;
+}
+
+#scoreBox {
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+#highscoreBox {
+  font-weight: bold;
+  right: 150px;
+
+}
+
+.food {
+  background-color: orangered;
+  border-radius: 20px;
+}
+
+/* Snake Body */
+.snake {
+  background: linear-gradient(45deg, yellow, #ffd700);
+  border: 2px solid #8a6d3b;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+/* Snake Head */
+.head {
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  border: 2px solid #2980b9;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow for emphasis */
+}
+
+
+#button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#Arrowup {
+  background-color: #3498db;
+}
+
+#Arrowdown {
+  background-color: #e74c3c;
+}
+
+#Arrowleft {
+  background-color: #f39c12;
+}
+
+#Arrowright {
+  background-color: #2ecc71;
+}
+
+@media screen and (max-width: 720px) {
+  #board {
+    width: 80vmin;
+    height: 82vmin;
+  }
+  
+  #scoreBox {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  #highscoreBox {
+    text-align: center;
+    right: 0;
+    top: 0;
+  }
+}
