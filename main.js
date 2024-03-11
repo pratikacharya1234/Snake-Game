@@ -1,9 +1,9 @@
 // variables
 let inputDir ={ x:0, y:0};
-let eatingSound = new Audio('/music/eating.mp3');
-let gameOver = new Audio('/music/gameover.wav');
-let moveSound = new Audio('/music/movesound.wav');
-let musicSound = new Audio('/music/music.mp3');
+let eatingSound = new Audio('eating.mp3');
+let gameOver = new Audio('gameover.wav');
+let moveSound = new Audio('movesound.wav');
+let musicSound = new Audio('music.mp3');
 let speed =6;
 let lastPaintTime = 0;
 let score = 0;
@@ -152,13 +152,11 @@ window.addEventListener('keydown', e =>{
     }
 })
 
-// Get references to the buttons
 const upButton = document.getElementById("Arrowup");
 const downButton = document.getElementById("Arrowdown");
 const leftButton = document.getElementById("Arrowleft");
 const rightButton = document.getElementById("Arrowright");
 
-// Add event listeners to the buttons
 upButton.addEventListener('click', () => {
     console.log("ArrowUp");
     inputDir.x = 0;

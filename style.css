@@ -42,20 +42,18 @@ body {
   border-radius: 20px;
 }
 
-/* Snake Body */
 .snake {
   background: linear-gradient(45deg, yellow, #ffd700);
   border: 2px solid #8a6d3b;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
 }
 
-/* Snake Head */
 .head {
   background: linear-gradient(45deg, #3498db, #2980b9);
   border: 2px solid #2980b9;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow for emphasis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 
 
