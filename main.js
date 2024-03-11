@@ -183,13 +183,13 @@ downButton.addEventListener('click', () => {
     inputDir.y = 1;
 });
 
-leftButton.addEventListener('click', () => {
+rightButton.addEventListener('click', () => {
     console.log("ArrowLeft");
     inputDir.x = -1;
     inputDir.y = 0;
 });
 
-rightButton.addEventListener('click', () => {
+leftButton.addEventListener('click', () => {
     console.log("ArrowRight");
     inputDir.x = 1;
     inputDir.y = 0;
